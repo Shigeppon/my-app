@@ -6,7 +6,7 @@ export default function Home() {
       const y = 38
       return y
     }
-    const z = 2
+    const z = 40
     return z
   }
 
