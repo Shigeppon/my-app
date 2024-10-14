@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "lint-fix": "next lint --fix --ext .{tsx,ts} 'src/**/*'",
+    "lint": "eslint 'src/**/*.{js,ts,tsx}'",
+    "lint-fix": "eslint --fix 'src/**/*.{js,ts,tsx}'",
     "format": "npm run lint-fix && prettier --write 'src/**/*.{js,ts,tsx,css}'",
     "prepare": "husky"
   },

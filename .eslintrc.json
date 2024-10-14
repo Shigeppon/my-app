@@ -1,7 +1,11 @@
 {
   "rules": {
     //"semi": ["error", "always"]
-    //"semi": ["off"]
+    //"semi": ["off"],
+    "no-console": "error",
+    "no-debugger": "error",
+    "no-duplicate-imports": "error",
+    "no-else-return": "error"
   },
   "extends": ["next/core-web-vitals", "next/typescript", "prettier"]
 }
