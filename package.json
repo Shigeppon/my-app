@@ -7,12 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint-fix": "next lint --fix --ext .tsx .",
-    "format": "eslint src --fix && prettier --write 'src/**/*.{js,ts,tsx,css}'",
+    "lint-fix": "next lint --fix --ext .{tsx,ts} 'src/**/*'",
+    "format": "npm run lint-fix && prettier --write 'src/**/*.{js,ts,tsx,css}'",
     "prepare": "husky"
   },
   "lint-staged": {
-    "src/**/*.{ts,tsx}": "npm run lint-fix"
+    "src/**/*.{ts,tsx}": "npm run format"
   },
   "dependencies": {
     "next": "^14.2.15",
